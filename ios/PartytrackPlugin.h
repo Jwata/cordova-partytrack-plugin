@@ -1,7 +1,7 @@
 // PartyTrackPlugin.h
 
 #import <Cordova/CDV.h>
-#import <Partytrack/Partytrack.h>
+#import "Partytrack.h"
 
 @interface PartyTrackPlugin : CDVPlugin {
 }
