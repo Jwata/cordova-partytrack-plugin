@@ -1,6 +1,6 @@
 // PartytrackPlugin.h
 
-#import "Partytrack.h"
+#import "PartytrackPlugin.h"
 
 @implementation PartytrackPlugin
 
