@@ -23,7 +23,9 @@
 
     <header-file src="ios/PartyTrackPlugin.h" />
     <source-file src="ios/PartyTrackPlugin.m" />
-    <framework src="ios/Partytrack.framework" />
+    <header-file src="ios/Partytrack.h" />
+    <header-file src="ios/PTSenderDelegate.h" />
+    <source-file src="ios/Partytrack.framework" framework="true" />
 
     <framework src="CoreData.framework" />
     <framework src="UIKit.framework" />
