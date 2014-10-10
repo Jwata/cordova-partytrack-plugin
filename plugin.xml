@@ -6,23 +6,23 @@
   <engines>
     <engine name="cordova" version=">=3.0.0" />
   </engines>
-  <name>PartyTrack Plugin</name>
+  <name>Partytrack Plugin</name>
   <description>Simple tracking for PartyTrack SDK (iOS)</description>
   <author>Junji Watanabe</author>
   <license>MIT License</license>
-  <js-module src="www/partytrack.js" name="PartyTrack">
+  <js-module src="www/partytrack.js" name="Partytrack">
     <clobbers target="partytrack" />
   </js-module>
 
   <platform name="ios">
     <config-file target="config.xml" parent="/*">
-      <feature name="PartyTrack">
-        <param name="ios-package" value="PartyTrackPlugin" />
+      <feature name="Partytrack">
+        <param name="ios-package" value="PartytrackPlugin" />
       </feature>
     </config-file>
 
-    <header-file src="ios/PartyTrackPlugin.h" />
-    <source-file src="ios/PartyTrackPlugin.m" />
+    <header-file src="ios/PartytrackPlugin.h" />
+    <source-file src="ios/PartytrackPlugin.m" />
     <header-file src="ios/Partytrack.h" />
     <header-file src="ios/PTSenderDelegate.h" />
     <source-file src="ios/partytrack" framework="true" />

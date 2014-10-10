@@ -1,10 +1,10 @@
-// PartyTrackPlugin.h
+// PartytrackPlugin.h
 
 #import <Cordova/CDV.h>
 #import "Partytrack.h"
 #import "PartytrackPlugin.h"
 
-@interface PartyTrackPlugin : CDVPlugin {
+@interface PartytrackPlugin : CDVPlugin {
 }
 
 - (void) startWithAppID: (CDVInvokedUrlCommand*) command;

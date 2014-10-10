@@ -1,8 +1,8 @@
-// PartyTrackPlugin.h
+// PartytrackPlugin.h
 
 #import "Partytrack.h"
 
-@implementation PartyTrackPlugin
+@implementation PartytrackPlugin
 
 - (void)startWithAppID: (CDVInvokedUrlCommand*) command
 {
