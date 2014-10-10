@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin
+    xmlns=""
+    id="com.enJapan.plugins.partytrack"
+    version="0.0.0">
+  <engines>
+    <engine name="cordova" version=">=3.0.0" />
+  </engines>
+  <name>PartyTrack Plugin</name>
+  <description>Simple tracking for PartyTrack SDK (iOS)</description>
+  <author>Junji Watanabe</author>
+  <license>MIT License</license>
+  <js-module src="www/partytrack.js" name="PartyTrack">
+    <clobbers target="partytrack" />
+  </js-module>
+
+  <platform name="ios">
+    <config-file target="config.xml" parent="/*">
+      <feature name="PartyTrack">
+        <param name="ios-package" value="PartyTrackPlugin" />
+      </feature>
+    </config-file>
+
+    <header-file src="ios/PartyTrackPlugin.h" />
+    <source-file src="ios/PartyTrackPlugin.m" />
+
+    <framework src="Partytrack.framework" />
+    <framework src="CoreData.framework" />
+    <framework src="UIKit.framework" />
+    <framework src="Foundation.framework" />
+    <framework src="Security.framework" />
+    <framework src="AdSupport.framework" />
+    <framework src="iAd.framework" />
+  </platform>
+
+  <!-- TODO: implement for Android
+  <platform name="android">
+  </platform>
+  -->
+</plugin>
