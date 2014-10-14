@@ -5,5 +5,7 @@
     cordova.exec(onSuccess, onError, 'PartyTrack', 'startWithAppID', [appId, appKey]);
   }
 
-  modules.exports = new PartytrackPlugin();
+  if (typeof module != 'undefined' && module.exports) {
+    module.exports = new PartytrackPlugin();
+  }
 })();
