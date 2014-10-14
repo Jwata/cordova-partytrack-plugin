@@ -12,7 +12,7 @@
       window.plugins = {};
     }
     if (!window.plugins.partytrackPlugin) {
-      window.partytrackPlugin) = new PartytrackPlugin();
+      window.partytrackPlugin = new PartytrackPlugin();
     }
   }
 
