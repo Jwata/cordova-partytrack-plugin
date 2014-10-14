@@ -13,9 +13,7 @@
     NSLog(@"appId %d", appId);
     NSLog(@"appKey %@", appKey);
 
-    [[Partytrack sharedInstance] openDebugInfo];
     [[Partytrack sharedInstance] startWithAppID:appId AndKey: appKey];
-    [[Partytrack sharedInstance] openDebugInfo];
 
     pluginResult = [CDVPluginResult resultWithStatus:CDVCommandStatus_OK];
     [self.commandDelegate sendPluginResult:pluginResult callbackId:command.callbackId];
