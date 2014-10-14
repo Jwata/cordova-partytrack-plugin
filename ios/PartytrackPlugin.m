@@ -4,10 +4,10 @@
 
 @implementation PartytrackPlugin
 
-- (void)startWithAppID: (CDVInvokedUrlCommand*) command
+- (void)startWithAppIDAndKey: (CDVInvokedUrlCommand*) command
 {
     CDVPluginResult* pluginResult = nil;
-    int appId = [command.arguments objectAtIndex:0];
+    int appId = [[command.arguments objectAtIndex:0] intValue];
     NSString* appKey = [command.arguments objectAtIndex:1];
 
     NSLog(@"appId %d", appId);

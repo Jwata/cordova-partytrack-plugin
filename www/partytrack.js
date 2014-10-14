@@ -2,7 +2,7 @@
   function PartytrackPlugin() {}
 
   PartytrackPlugin.prototype.startWithAppIDAndKey = function(appId, appKey, onSuccess, onError) {
-    cordova.exec(onSuccess, onError, 'PartyTrack', 'startWithAppID', [appId, appKey]);
+    cordova.exec(onSuccess, onError, 'PartyTrack', 'startWithAppIDAndKey', [appId, appKey]);
   }
 
   if (typeof module != 'undefined' && module.exports) {

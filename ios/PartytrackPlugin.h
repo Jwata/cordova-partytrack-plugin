@@ -6,6 +6,6 @@
 @interface PartytrackPlugin : CDVPlugin {
 }
 
-- (void) startWithAppID: (CDVInvokedUrlCommand*) command;
+- (void) startWithAppIDAndKey: (CDVInvokedUrlCommand*) command;
 
 @end
